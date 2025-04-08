@@ -15,7 +15,7 @@ static int height(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	return (1 + (left_height > right_height ? left_height : right_height));
+	return ((left_height > right_height ? left_height : right_height) + 1);
 }
 
 /**

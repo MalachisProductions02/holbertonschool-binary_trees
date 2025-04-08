@@ -9,13 +9,15 @@
  */
 static int height(const binary_tree_t *tree)
 {
-	int left_height = height(tree->left);
-	int right_height = height(tree->right);
+	int left, right;
 	
 	if (tree == NULL)
 		return (0);
+	
+	left = height(tree->left);
+	right = height(tree->right);
 
-	return ((left_height > right_height ? left_height : right_height) + 1);
+	return ((left > right ? left : right) + 1);
 }
 
 /**

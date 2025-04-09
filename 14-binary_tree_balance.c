@@ -10,10 +10,8 @@
 static int height(const binary_tree_t *tree)
 {
 	int left, right;
-	
 	if (tree == NULL)
 		return (0);
-	
 	left = height(tree->left);
 	right = height(tree->right);
 

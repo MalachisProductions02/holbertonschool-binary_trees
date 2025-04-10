@@ -37,7 +37,7 @@ void enqueue(queue_node_t **head, queue_node_t **tail, const binary_tree_t *node
 }
 
 /**
- * dequeue - Removes and returns a node from  of the queue
+ * dequeue - Removes and returns a node from the front of the queue
  * @head: Pointer to the head of the queue
  * Return: Pointer to the binary tree node
  */
@@ -70,7 +70,7 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 	if (!tree || !func)
 		return;
 
-	enqueue(&head, $&tail, tree);
+	enqueue(&head, &tail, tree);
 
 	while (head)
 	{

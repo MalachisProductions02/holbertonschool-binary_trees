@@ -62,7 +62,7 @@ const binary_tree_t *dequeue(queue_node_t **head)
  * @tree: Pointer to the root node of the tree
  * @func: Function to call for each node's value
  */
-void binary_tree_levelorder(const bianry_tree_t *tree, void (*func)(int))
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 	queue_node_t *head = NULL, *tail = NULL;
 	const binary_tree_t *current;

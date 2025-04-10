@@ -8,7 +8,8 @@
  * @size: Pointer to the current size of the queue
  * @capacity: Pointer to the capacity of the queue
  */
-void queue_push(binary_tree_t ***queue, binary_tree_t *node, size_t *size, size_t *capacity)
+void queue_push(binary_tree_t ***queue, binary_tree_t *node, 
+	size_t *size, size_t *capacity)
 {
 	if (*size >= *capacity)
 	{
